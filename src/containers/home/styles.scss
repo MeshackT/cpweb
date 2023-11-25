@@ -1,0 +1,349 @@
+#home {
+  background-color: transparent;
+  // padding: 80px 0;
+  width: 100%;
+  height: 80vh;
+  
+}
+
+.home {
+  max-width: auto;
+  // margin: 90px auto;
+&_space{
+  margin-top: 170px;
+}
+  &_more {
+    padding-left: 0px;
+    margin-left: 0px;
+
+  }
+
+  &_more_content {
+    width: 100%;
+    height: 100vh;
+    background: red;
+    background-image: url('../../images/fantasy.jpg');
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    
+
+    &_box {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      opacity: 1;
+      z-index: 1;
+
+      &_content {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 80%;
+        flex-direction: column;
+
+
+        h1 {
+          font-size: 5rem;
+          color: #ffffff;
+          text-align: center;
+          margin-bottom: 30px;
+          
+        }
+
+        h3 {
+          font-size: 2rem;
+          color: #ffffff;
+          text-align: start;
+          // line-height: .8rem;
+
+
+        }
+      }
+
+    }
+  }
+
+  // home
+  &_content {
+    height: 60%;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    &_personalWrapper {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: self-start;
+      align-items: flex-start;
+      flex: 2;
+      margin-top: 200px;
+      background-image: url('../../images/fantasy.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 80px;
+      margin-left: 0px;
+      margin-bottom: 10px;
+
+
+      .personalInformationHeader {
+        font-size: 7rem;
+        color: red;
+        text-align: start;
+        margin-bottom: 20px;
+
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-size: 3.4rem;
+        color: #ffffff;
+        text-align: start;
+        font-weight: 800;
+
+      }
+
+      button {
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12;
+        background: transparent;
+        color: #ffffff;
+        border: .2rem solid #ffffff;
+        border-radius: 50px;
+        font-weight: 800;
+        margin-top: 20px;
+
+        &:hover {
+          background: red;
+          color: #ffffff;
+          border: .08rem solid red;
+
+        }
+      }
+
+
+    }
+
+    // image
+    &_serviceWrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: self-start;
+      flex: 2;
+      height: 100%;
+      width: 100%;
+      margin-top: 200px;
+
+      // background: red;
+
+
+      &_box {
+        flex: 2;
+        margin-left: 30px;
+        margin-right: 20px; // Adjust as needed
+        margin-top: 200px;
+
+        overflow: hidden;
+        // background: red; //right
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 350px;
+        width: 100%;
+
+
+        &_slider {
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          img {
+            width: 100%;
+            height: auto;
+            display: flex;
+            background-size: contain;
+
+          }
+        }
+
+      }
+    }
+  }
+
+
+}
+
+// phone
+@media screen and (min-width: 200px) and (max-width: 900px) {
+
+  .home {
+    max-width: auto;
+    // margin: 90px auto;
+    height: 100vh;
+    &_space{
+      margin-top: 0px;
+    }
+    &_more {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+      padding-left: 0px;
+    margin-left: 0px;
+
+    }
+
+    &_more_content {
+      width: 100%;
+      height: 100vh;
+      background: red;
+      background-image: url('../../images/bg.png');
+      opacity: 1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-right: 10px;
+      padding-top: 40px;
+
+
+      &_box {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        opacity: 1;
+        flex-direction: row;
+
+        &_content {
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          width: 100%;
+          flex-direction: column;
+
+
+          h1 {
+            padding-top: 40px;
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+
+          h3 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            line-height: 20px;
+
+          }
+        }
+
+      }
+    }
+
+    // image
+    &_content {
+      height: 130vh;
+      // margin-bottom: 150px;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      padding-left: 0px;
+      margin-left: 0px;
+      padding: 0px;
+
+      &_personalWrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: centerstart;
+        align-items: center;
+        flex: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+
+        .personalInformationHeader {
+          font-size: 5rem;
+          color: red;
+          text-align: center;
+          margin-bottom: 20px;
+          margin-top: 40px;
+
+          font-weight: 800;
+        }
+
+        p {
+          margin-bottom: 10px;
+          font-size: 2.2rem;
+          color: #ffffff;
+          text-align: center;
+          font-weight: 800;
+
+
+        }
+
+        button {
+
+          margin-bottom: 50px;
+
+        }
+
+
+      }
+
+      // image
+      &_serviceWrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: self-start;
+        flex: 1;
+        // height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+
+        &_box {
+
+          overflow: hidden;
+          // background: red;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin-top: 20px;
+
+
+
+          &_slider {
+            z-index: 1;
+
+            img {
+              width: 100%;
+              height: auto;
+              display: flex;
+
+            }
+
+
+          }
+        }
+
+
+      }
+
+    }
+  }
+}

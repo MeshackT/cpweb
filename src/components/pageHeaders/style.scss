@@ -1,0 +1,34 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    border-bottom: 1px dashed #ffffff;
+    background-image: url('../../images/fantasy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2{
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1rem;
+        display: flex;
+        flex-grow: 1;
+        color: #ffffff;
+        text-transform: capitalize;
+        padding-bottom: 30px;
+    }
+
+    span{
+        svg{
+            color: #ffffff
+        }
+    }
+}
