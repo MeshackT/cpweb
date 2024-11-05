@@ -5,3 +5,4 @@ No backend implemented, just frontend
 2. MediaQruery
 3. Hosting via firebase
 
+https://fshproject.web.app/
